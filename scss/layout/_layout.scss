@@ -1,0 +1,40 @@
+
+.section-heading{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 35px;
+
+    &::before{
+        width: 48px;
+        height: 4px;
+        background-color: $secondary-clr;
+        content: "";
+        bottom: -15px;
+        position: absolute;
+        border-radius: 4px;
+    }
+    &::after{
+        width: 24px;
+        height: 4px;
+        background-color: $secondary-clr;
+        content: "";
+        bottom: -15px;
+        left: 52px;
+        position: absolute;
+        border-radius: 4px;
+
+    }
+    span{
+        float: right;
+        font-size: 16px;
+        font-weight: 600;
+        color: $secondary-clr;
+        text-transform: uppercase;
+    }
+}
+
+section{
+    margin-bottom: 56px;
+}

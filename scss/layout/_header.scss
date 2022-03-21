@@ -1,0 +1,75 @@
+header {
+  background-color: $primary-clr;
+  z-index: 5;
+
+  .container {
+    max-width: 1240px;
+    padding: 24px 15px;
+
+    .logo {
+      margin: 0 40px 0 6px;
+    }
+
+    .nav {
+      .search-container {
+        
+        padding: 4px 8px 4px 0;
+
+        .search-info {
+          margin-left: 33px;
+          cursor: pointer;
+          font-size: 14px;
+
+          &-heading {
+            font-weight: 600;
+            color: #2f242c;
+          }
+          &-desc {
+            font-weight: 400;
+            color: #96969b;
+          }
+        }
+        .search-icon {
+          margin-left: 33px;
+          width: 56px;
+          height: 56px;
+          cursor: pointer;
+          background-color: $secondary-clr;
+        }
+      }
+      .setting-container {
+        gap: 24px;
+
+        .setting {
+      
+          &-icon {
+            margin-bottom: 4px;
+
+            img {
+              width: 32px;
+              height: 32px;
+              object-fit: contain;
+            }
+          }
+          &-title {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+.profile {
+  &-img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 6px;
+  }
+  &-title {
+    background-color: $primary-clr;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

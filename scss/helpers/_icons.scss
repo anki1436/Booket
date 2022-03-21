@@ -1,0 +1,423 @@
+// @import "variables";
+// @font-face {
+//     font-family: '#{$icomoon-font-family}';
+//     src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7h1y5j');
+//     src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7h1y5j#iefix') format('embedded-opentype'),
+//     url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?7h1y5j') format('truetype'),
+//     url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?7h1y5j') format('woff'),
+//     url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?7h1y5j##{$icomoon-font-family}') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: block;
+// }
+
+// [class^="icon-iifl-"],
+// [class*=" icon-iifl-"] {
+//     /* use !important to prevent issues with browser extensions that change fonts */
+//     font-family: '#{$icomoon-font-family}' !important;
+//     speak: none;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-variant: normal;
+//     text-transform: none;
+//     line-height: 1;
+//     /* Better Font Rendering =========== */
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+
+// .icon-iifl-home {
+//     &:before {
+//         content: $icon-iifl-home;
+//     }
+// }
+
+// .icon-iifl-time {
+//     &:before {
+//         content: $icon-iifl-time;
+//     }
+// }
+
+// .icon-iifl-dollar-with-hand {
+//     &:before {
+//         content: $icon-iifl-dollar-with-hand;
+//     }
+// }
+
+// .icon-iifl-tool {
+//     &:before {
+//         content: $icon-iifl-tool;
+//     }
+// }
+
+// .icon-iifl-ring {
+//     &:before {
+//         content: $icon-iifl-ring;
+//     }
+// }
+
+// .icon-iifl-support {
+//     &:before {
+//         content: $icon-iifl-support;
+//     }
+// }
+
+// .icon-iifl-left-line-arrow {
+//     &:before {
+//         content: $icon-iifl-left-line-arrow;
+//     }
+// }
+
+// .icon-iifl-right-line-arrow {
+//     &:before {
+//         content: $icon-iifl-right-line-arrow;
+//     }
+// }
+
+// .icon-iifl-right-line-arrow-big {
+//     &:before {
+//         content: $icon-iifl-right-line-arrow-big;
+//     }
+// }
+
+// .icon-iifl-search {
+//     &:before {
+//         content: $icon-iifl-search;
+//     }
+// }
+
+// .icon-iifl-file {
+//     &:before {
+//         content: $icon-iifl-file;
+//     }
+// }
+
+// .icon-iifl-close {
+//     &:before {
+//         content: $icon-iifl-close;
+//     }
+// }
+
+// .icon-iifl-download {
+//     &:before {
+//         content: $icon-iifl-download;
+//     }
+// }
+
+// .icon-iifl-eye {
+//     &:before {
+//         content: $icon-iifl-eye;
+//     }
+// }
+
+// .icon-iifl-facebook {
+//     &:before {
+//         content: $icon-iifl-facebook;
+//     }
+// }
+
+// .icon-iifl-twitter {
+//     &:before {
+//         content: $icon-iifl-twitter;
+//     }
+// }
+
+// .icon-iifl-linkedin {
+//     &:before {
+//         content: $icon-iifl-linkedin;
+//     }
+// }
+
+// .icon-iifl-instagram {
+//     &:before {
+//         content: $icon-iifl-instagram;
+//     }
+// }
+
+// .icon-iifl-youtube {
+//     &:before {
+//         content: $icon-iifl-youtube;
+//     }
+// }
+
+// .icon-iifl-whatsapp {
+//     &:before {
+//         content: $icon-iifl-whatsapp;
+//     }
+// }
+
+// .icon-iifl-location-pin {
+//     &:before {
+//         content: $icon-iifl-location-pin;
+//     }
+// }
+
+// .icon-iifl-plus {
+//     &:before {
+//         content: $icon-iifl-plus;
+//     }
+// }
+
+// .icon-iifl-minus {
+//     &:before {
+//         content: $icon-iifl-minus;
+//     }
+// }
+
+// .icon-iifl-paint-brush {
+//     &:before {
+//         content: $icon-iifl-paint-brush;
+//     }
+// }
+
+// .icon-iifl-phone {
+//     &:before {
+//         content: $icon-iifl-phone;
+//     }
+// }
+
+// .icon-iifl-right-angle-arrow {
+//     &:before {
+//         content: $icon-iifl-right-angle-arrow;
+//     }
+// }
+
+// .icon-iifl-share {
+//     &:before {
+//         content: $icon-iifl-share;
+//     }
+// }
+
+// .icon-iifl-user {
+//     &:before {
+//         content: $icon-iifl-user;
+//     }
+// }
+
+// .icon-iifl-refresh {
+//     &:before {
+//         content: $icon-iifl-refresh;
+//     }
+// }
+
+// .icon-iifl-like {
+//     &:before {
+//         content: $icon-iifl-like;
+//     }
+// }
+
+// .icon-iifl-dislike {
+//     &:before {
+//         content: $icon-iifl-dislike;
+//     }
+// }
+
+// .icon-iifl-edit {
+//     &:before {
+//         content: $icon-iifl-edit;
+//     }
+// }
+
+// .icon-iifl-rupee-with-hand {
+//     &:before {
+//         content: $icon-iifl-rupee-with-hand;
+//     }
+// }
+
+// .icon-iifl-question {
+//     &:before {
+//         content: $icon-iifl-question;
+//     }
+// }
+
+// .icon-iifl-identity {
+//     &:before {
+//         content: $icon-iifl-identity;
+//     }
+// }
+
+// .icon-iifl-trophy {
+//     &:before {
+//         content: $icon-iifl-trophy;
+//     }
+// }
+
+// .icon-iifl-note {
+//     &:before {
+//         content: $icon-iifl-note;
+//     }
+// }
+
+// .icon-iifl-sms {
+//     &:before {
+//         content: $icon-iifl-sms;
+//     }
+// }
+
+// .icon-iifl-debit-card {
+//     &:before {
+//         content: $icon-iifl-debit-card;
+//     }
+// }
+
+// .icon-iifl-credit-card {
+//     &:before {
+//         content: $icon-iifl-credit-card;
+//     }
+// }
+
+// .icon-iifl-upi {
+//     &:before {
+//         content: $icon-iifl-upi;
+//     }
+// }
+
+// .icon-iifl-rupay {
+//     &:before {
+//         content: $icon-iifl-rupay;
+//     }
+// }
+
+// .icon-iifl-paytm {
+//     &:before {
+//         content: $icon-iifl-paytm;
+//     }
+// }
+
+// .icon-iifl-gold {
+//     &:before {
+//         content: $icon-iifl-gold;
+//     }
+// }
+
+// .icon-iifl-documents {
+//     &:before {
+//         content: $icon-iifl-documents;
+//     }
+// }
+
+// .icon-iifl-rupee-bag {
+//     &:before {
+//         content: $icon-iifl-rupee-bag;
+//     }
+// }
+
+// .icon-iifl-pay-from-mobile-app {
+//     &:before {
+//         content: $icon-iifl-pay-from-mobile-app;
+//     }
+// }
+
+// .icon-iifl-pay-online-computer {
+//     &:before {
+//         content: $icon-iifl-pay-online-computer;
+//     }
+// }
+
+// .icon-iifl-hand-cash-payment {
+//     &:before {
+//         content: $icon-iifl-hand-cash-payment;
+//     }
+// }
+
+// .icon-iifl-exclamatory {
+//     &:before {
+//         content: $icon-iifl-exclamatory;
+//     }
+// }
+
+// .icon-iifl-tick-circle {
+//     &:before {
+//         content: $icon-iifl-tick-circle;
+//     }
+// }
+
+// .icon-iifl-translate {
+//     &:before {
+//         content: $icon-iifl-translate;
+//     }
+// }
+
+// .icon-iifl-sound {
+//     &:before {
+//         content: $icon-iifl-sound;
+//     }
+// }
+
+// .icon-iifl-label {
+//     &:before {
+//         content: $icon-iifl-label;
+//     }
+// }
+
+// .icon-iifl-pdf {
+//     &:before {
+//         content: $icon-iifl-pdf;
+//     }
+// }
+
+// .icon-iifl-mail {
+//     &:before {
+//         content: $icon-iifl-mail;
+//     }
+// }
+
+// .icon-iifl-heart {
+//     &:before {
+//         content: $icon-iifl-heart;
+//     }
+// }
+
+// .icon-iifl-heart-fill {
+//     &:before {
+//         content: $icon-iifl-heart-fill;
+//     }
+// }
+
+// .icon-iifl-location-pin-1 {
+//     &:before {
+//         content: $icon-iifl-location-pin-1;
+//     }
+// }
+
+// .icon-iifl-direction {
+//     &:before {
+//         content: $icon-iifl-direction;
+//     }
+// }
+
+// .icon-iifl-details {
+//     &:before {
+//         content: $icon-iifl-details;
+//     }
+// }
+
+// .icon-iifl-friends_details {
+//     &:before {
+//         content: $icon-iifl-friends_details;
+//     }
+// }
+
+// .icon-iifl-Rewards {
+//     &:before {
+//         content: $icon-iifl-Rewards;
+//     }
+// }
+
+// .icon-iifl-gift-vochure-1 {
+//     &:before {
+//         content: $icon-iifl-gift-vochure-1;
+//     }
+// }
+
+// .icon-iifl-gift-vochure-2000 {
+//     &:before {
+//         content: $icon-iifl-gift-vochure-2000;
+//     }
+// }
+
+// .icon-iifl-i-phone12 {
+//     &:before {
+//         content: $icon-iifl-i-phone12;
+//     }
+// }

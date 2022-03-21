@@ -1,0 +1,33 @@
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 16px;
+  height: 58px;
+  width: 58px;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
+}
+.carousel-control-prev::before,
+.carousel-control-next::before {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+
+  color: white !important;
+}
+.carousel-control-prev::before {
+  content: "\290C";
+}
+.carousel-control-next::before {
+  content: "\290D";
+}
+

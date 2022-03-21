@@ -1,0 +1,124 @@
+// .bg-primary {
+//     background-color: $primary-color-orange !important;
+//     color: #fff;
+// }
+
+// .bg-light-sky-blue {
+//     background-color: $light-sky-blue !important;
+// }
+
+// .box-title {
+//     span {
+//         font-weight: 300;
+//     }
+//     &--span-block {
+//         span {
+//             display: block;
+//         }
+//     }
+//     &--white {
+//         color: $primary-color-white;
+//     }
+//     &--style-1,
+//     &--style-3,
+//     &--style-4 {
+//         @include breakpoint(mobile-max) {
+//             font-size: 3.2rem;
+//         }
+//     }
+//     &--style-3 {
+//         text-align: center;
+//     }
+//     &--style-4 {
+//         > span {
+//             display: block;
+//         }
+//     }
+// }
+
+// .bg-pattern-triangle {
+//     @include bg-pattern-triangle();
+// }
+
+// .bg-pattern-triangle-full {
+//     @include bg-pattern-triangle-full();
+// }
+
+// .orange-gradient {
+//     @include orange-gradient-style-1();
+// }
+
+// .no-shadow {
+//     box-shadow: none !important;
+// }
+
+// .lead {
+//     font-size: 1.8rem;
+//     font-weight: 400;
+// }
+
+// .text-primary {
+//     color: $primary-color-orange !important;
+// }
+
+// .play-icon {
+//     display: flex;
+//     width: 70px;
+//     height: 70px;
+//     background-color: $primary-color-white;
+//     border-radius: 100%;
+//     position: relative;
+//     &::after {
+//         position: absolute;
+//         content: "";
+//         border-top: 7px solid transparent;
+//         border-bottom: 7px solid transparent;
+//         border-left: 10px solid $primary-color-orange;
+//         width: 0;
+//         height: 0;
+//         top: 0;
+//         bottom: 0;
+//         left: 0;
+//         right: 0;
+//         margin: auto;
+//     }
+//     @include breakpoint(mobile-max) {
+//         width: 40px;
+//         height: 40px;
+//         &::after {
+//             border-top: 5px solid transparent;
+//             border-bottom: 5px solid transparent;
+//             border-left: 7px solid $primary-color-orange;
+//         }
+//     }
+// }
+
+// .popover-icon {
+//     color: $text-color;
+//     margin-left: 0.5rem;
+//     &:hover,
+//     &:focus {
+//         color: #000;
+//     }
+//     &:focus {
+//         outline: none;
+//     }
+// }
+
+// .counter-css {
+//     counter-reset: section;
+//     li {
+//         &::before {
+//             counter-increment: section;
+//             content: counter(section) ". ";
+//         }
+//     }
+// }
+
+// .page-title-hide {
+//     &:not(.toolbar-fixed) {
+//         .block-page-title-block {
+//             display: none;
+//         }
+//     }
+// }
