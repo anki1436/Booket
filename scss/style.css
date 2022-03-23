@@ -16,7 +16,7 @@
 }
 
 li {
-  list-style: none;
+  list-style: none !important;
 }
 
 a {
@@ -39,6 +39,24 @@ main {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  main {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  main {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 359px) {
+  main {
+    padding: 0 3px;
+  }
 }
 
 header {
@@ -130,16 +148,36 @@ footer .container {
   padding: 80px 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   gap: 24px;
+}
+
+@media (max-width: 767px) {
+  footer .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 footer .container .footer-join {
   font-size: 16px;
   font-weight: 600;
-  min-width: 300px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  max-width: 400px;
+}
+
+@media (max-width: 767px) {
+  footer .container .footer-join {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+}
+
+footer .container .footer-join .footer__heading {
+  width: 250px;
 }
 
 footer .container .footer-join-img {
@@ -161,36 +199,30 @@ footer .container .footer-join-btn {
   font-weight: 600;
 }
 
-footer .container .footer-aboutUs {
-  min-width: 400px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 footer .container .footer-aboutUs-link-con {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-footer .container .footer-aboutUs-link-con__link-wrapper {
-  margin: 0;
+  width: 180px;
 }
 
 footer .container .footer-aboutUs-link-con__link-wrapper__link-item {
   color: #c8c7cc;
   font-style: 14px;
   font-weight: 400;
-  line-height: 1.44;
+  line-height: 1 .44;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 footer .container .footer-aboutUs-touch-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   cursor: pointer;
   margin-bottom: 8px;
 }
@@ -199,6 +231,15 @@ footer .container .footer-aboutUs-touch-info__icon {
   height: 16px;
   width: 16px;
   margin-right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .container .footer-aboutUs-touch-info__icon img {
@@ -212,29 +253,28 @@ footer .container .footer-aboutUs-touch-info__desc {
   color: #c8c7cc;
 }
 
-footer .container .footer-follow {
-  min-width: 400px;
-}
-
-footer .container .footer-follow .footer__heading {
+footer .footer-follow .footer__heading {
   margin-bottom: 12px;
 }
 
-footer .container .footer-follow__icon-con {
+footer .footer-follow__icon-con {
   margin-bottom: 37px;
 }
 
-footer .container .footer-follow__icon-con-icon {
+footer .footer-follow__icon-con-icon {
   margin-right: 24px;
 }
 
-footer .container .footer-follow .store {
+footer .footer-follow .store {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 11px;
 }
 
-footer .container .footer-follow .store img {
+footer .footer-follow .store img {
   margin-right: 11px;
   border-radius: 10px;
 }
@@ -245,6 +285,15 @@ footer .container .footer-follow .store img {
   text-transform: capitalize;
   position: relative;
   margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-heading::before {
@@ -281,12 +330,20 @@ section {
 }
 
 .slider {
-  height: 300px;
   margin: 36px 0 56px 0;
 }
 
 .slider .carousel-item img {
-  height: 300px;
+  aspect-ratio: 4/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 300px;
+  -o-object-position: right;
+     object-position: right;
+}
+
+.slider .carousel-indicators {
+  margin: 0;
 }
 
 .slider .carousel-indicators li {

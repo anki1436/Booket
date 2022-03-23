@@ -41,7 +41,7 @@ export const categories = [{
 
 export const popular = [{
     id: 1,
-    img: "./image/event-img.jpg",
+    img: "./image/popular-1.png",
     alt: "popular 1",
     title: "Great Qatar Food Festival",
     location: "Mosman Park, Sydney",
@@ -49,7 +49,7 @@ export const popular = [{
 },
 {
     id: 2,
-    img: "./image/event-img.jpg",
+    img: "./image/popular-2.png",
     alt: "popular 2",
     title: "QAWARIB Qatar International Boat Show 2021",
     location: "The Pearl Qatar",
@@ -57,7 +57,7 @@ export const popular = [{
 },
 {
     id: 3,
-    img: "./image/event-img.jpg",
+    img: "./image/popular-3.png",
     alt: "popular 3",
     title: "Commercial Bank CHI Al SHAQAB Presented by Longines",
     location: "Al Shaqab",
@@ -65,7 +65,7 @@ export const popular = [{
 },
 {
     id: 4,
-    img: "./image/event-img.jpg",
+    img: "./image/popular-4.png",
     alt: "popular 4",
     title: "Tasty Street Qatar at Katara Cultural Village",
     location: "Al Gannas ",
@@ -76,7 +76,7 @@ export const popular = [{
 
 export const nearBy = [{
     id: 1,
-    img: "./image/event-img.jpg",
+    img: "./image/nearBy-1.png",
     alt: "nearBy 1",
     title: "HOT AIR BALLOON  FLIGHTS OVER THE DOHA",
     location: "Doha",
@@ -84,7 +84,7 @@ export const nearBy = [{
 },
 {
     id: 2,
-    img: "./image/event-img.jpg",
+    img: "./image/nearBy-2.png",
     alt: "nearBy 2",
     title: "Full Day Desert Safari",
     location: "Doha, Qatar",
@@ -92,7 +92,7 @@ export const nearBy = [{
 },
 {
     id: 3,
-    img: "./image/event-img.jpg",
+    img: "./image/nearBy-3.png",
     alt: "nearBy 3",
     title: "North of Qatar",
     location: "Doha, Qatar",
@@ -100,7 +100,7 @@ export const nearBy = [{
 },
 {
     id: 4,
-    img: "./image/event-img.jpg",
+    img: "./image/nearBy-4.png",
     alt: "nearBy 4",
     title: "Qatar History vs Future",
     location: "Doha, Qatar",
@@ -110,7 +110,7 @@ export const nearBy = [{
 ];
 export const recomended = [{
     id: 1,
-    img: "./image/event-img.jpg",
+    img: "./image/recomend-1.png",
     alt: "recomended 1",
     title: "The International  Handicrafts & Traditional Productions Cultural ..",
     location: "Mosman Park, Sydney",
@@ -118,7 +118,7 @@ export const recomended = [{
 },
 {
     id: 2,
-    img: "./image/event-img.jpg",
+    img: "./image/recomend-2.png",
     alt: "recomended 2",
     title: "International Horticultural Expo Doha",
     location: "The Pearl Qatar",
@@ -126,7 +126,7 @@ export const recomended = [{
 },
 {
     id: 3,
-    img: "./image/event-img.jpg",
+    img: "./image/recomend-3.png",
     alt: "recomended 3",
     title: "Torba Farmers Market  2020",
     location: "Doha, Qatar",
@@ -134,7 +134,7 @@ export const recomended = [{
 },
 {
     id: 4,
-    img: "./image/event-img.jpg",
+    img: "./image/recomend-4.png",
     alt: "recomended 4",
     title: "Sea Caves Water Park",
     location: "Desert Falls Water and Adventure park",
@@ -144,7 +144,7 @@ export const recomended = [{
 ];
 export const featured = [{
     id: 1,
-    img: "./image/event-img.jpg",
+    img: "./image/featured-1.png",
     alt: "featured 1",
     title: "Qatar Museum Tour",
     location: " Doha, Qatar",
@@ -152,7 +152,7 @@ export const featured = [{
 },
 {
     id: 2,
-    img: "./image/event-img.jpg",
+    img: "./image/featured-2.png",
     alt: "featured 2",
     title: "Longines Global Champions Tour - Doha",
     location: "Blue Mountains, NSW",
@@ -160,7 +160,7 @@ export const featured = [{
 },
 {
     id: 3,
-    img: "./image/event-img.jpg",
+    img: "./image/featured-3.png",
     alt: "featured 3",
     title: "Qatar Sports and Educational Tour",
     location: "Surry Hills, Qatar",
@@ -168,7 +168,7 @@ export const featured = [{
 },
 {
     id: 4,
-    img: "./image/event-img.jpg",
+    img: "./image/featured-4.png",
     alt: "featured 4",
     title: "Shaikh faisal Camal Race track",
     location: "Surry Hills, Qatar",

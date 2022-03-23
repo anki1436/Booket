@@ -6,6 +6,8 @@ import { categories }  from "./data.js";
  import { nearBy }  from  "./data.js";
  import { organizer }  from  "./data.js";
 
+
+
 categories.forEach((cat) => {
     let category= document.getElementById("category");
 
@@ -168,10 +170,13 @@ organizer.forEach((organizer)=>{
     </div>
     <img src=${organizer.img} class="organizer-card-img" alt=${organizer.alt}>
     <h5 class="organizer-card-title">${organizer.title}</h5>
-    <span class="organizer-card-follower">${organizer.followerCount}</span>
+    <span class="organizer-card-follower">${organizer.followerCount} Follower</span>
     <button class="btn btn-outline-warning organizer-card-btn ">Follow</button>
 </div>
     `
 
 
 });
+
+
+

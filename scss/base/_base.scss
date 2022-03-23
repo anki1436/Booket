@@ -6,7 +6,7 @@
     scroll-behavior: smooth; 
   }
   li {
-    list-style: none;
+    list-style: none !important;
   }
  
   a{
@@ -16,7 +16,7 @@
   }
   span{
     cursor: pointer;
-  }
+  } 
  
 body{
   position: relative;
@@ -28,4 +28,14 @@ main{
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  @include breakpoint(mobile-max) {
+    padding: 0 10px;
+  }
+  @include breakpoint("portrait-mobile-max") {
+    padding: 0 5px;
+  }
+  @include breakpoint("custom-small-mobile-max") {
+    padding: 0 3px;
+  }
 }
+

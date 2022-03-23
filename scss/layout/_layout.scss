@@ -5,6 +5,9 @@
     text-transform: capitalize;
     position: relative;
     margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     &::before{
         width: 48px;

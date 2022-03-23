@@ -1,14 +1,18 @@
 .slider {
-  height: 300px;
+  
 
   margin: 36px 0 56px 0;
   .carousel-item {
     img {
-      height: 300px;
+      aspect-ratio: 4/1;
+      object-fit: cover;
+      min-height: 300px;
+      object-position: right;
     }
   }
 
   .carousel-indicators {
+    margin: 0;
     li {
       width: 8px;
       height: 8px;

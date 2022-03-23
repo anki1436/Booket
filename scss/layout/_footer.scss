@@ -13,13 +13,21 @@ footer {
     max-width: 1254px;
     padding: 80px 15px;
     flex-wrap: wrap;
+    justify-content: start;
+    @include breakpoint("mobile-max") {
+      justify-content: space-between;
+    }
     gap: 24px;
     .footer-join {
       font-size: 16px;
       font-weight: 600;
-
-      min-width: 300px;
-      flex: 1;
+      max-width: 400px;
+      @include breakpoint("mobile-max") {
+        max-width: max-content;
+      }
+      .footer__heading {
+        width: 250px;
+      }
       &-img {
         width: 192px;
         object-fit: contain;
@@ -37,34 +45,35 @@ footer {
       }
     }
 
-    .footer-aboutUs {
-      min-width: 400px;
-      flex-wrap: wrap;
-
-      &-link-con {
-        flex: 1;
+    .footer-aboutUs-link-con {
+        width: 180px;
         &__link-wrapper {
-          margin: 0;
+          
           &__link-item {
             color: rgb(200, 199, 204);
             font-style: 14px;
             font-weight: 400;
-            line-height: 1.44;
+            line-height: 1 .44;
+            width: max-content;
           }
         }
-      }
-
-      &-touch {
+      } 
+      .footer-aboutUs-touch {
         &-info {
           display: flex;
-          align-items: center;
+          justify-content: start;
+          align-items: flex-start;
           cursor: pointer;
           margin-bottom: 8px;
           &__icon {
             height: 16px;
             width: 16px;
-         
+            
             margin-right: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
             img {
               object-fit: contain;
             }
@@ -78,7 +87,6 @@ footer {
       }
     }
     .footer-follow{
-      min-width: 400px;
         .footer__heading{
             margin-bottom: 12px;
 
@@ -91,6 +99,8 @@ footer {
         }
         .store{
             display: flex;
+            flex-wrap: wrap;
+            gap: 11px;
             img{
                 margin-right: 11px;
                 border-radius: 10px;
@@ -100,4 +110,36 @@ footer {
     }
   }
 
-}
+
+
+// footer{
+//   padding: 56px 0 83px 0;
+// }
+// .wrapper{
+// display: flex;
+// flex-wrap: wrap;
+// }
+
+// .booklet{
+//   width: 301px;
+//   height: 200px;
+//   background-color: red;
+// }
+
+// .quick-link{
+//   width: 144px;
+//   height: 200px;
+//   background-color:blue;
+// }
+
+// .get-in{
+//   width: 206px;
+//   height: 200px;
+//   background-color: palevioletred;
+// }
+
+// .follow-us{
+//   width: 240px;
+//   height: 200px;
+//   background-color: red;
+// }
