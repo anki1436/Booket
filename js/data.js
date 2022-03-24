@@ -76,7 +76,7 @@ export const popular = [{
 
 export const nearBy = [{
     id: 1,
-    img: "./image/nearBy-1.png",
+    img: "./image/nearBY-1.png",
     alt: "nearBy 1",
     title: "HOT AIR BALLOON  FLIGHTS OVER THE DOHA",
     location: "Doha",
@@ -84,7 +84,7 @@ export const nearBy = [{
 },
 {
     id: 2,
-    img: "./image/nearBy-2.png",
+    img: "./image/nearBY-2.png",
     alt: "nearBy 2",
     title: "Full Day Desert Safari",
     location: "Doha, Qatar",
@@ -92,7 +92,7 @@ export const nearBy = [{
 },
 {
     id: 3,
-    img: "./image/nearBy-3.png",
+    img: "./image/nearBY-3.png",
     alt: "nearBy 3",
     title: "North of Qatar",
     location: "Doha, Qatar",
@@ -100,7 +100,7 @@ export const nearBy = [{
 },
 {
     id: 4,
-    img: "./image/nearBy-4.png",
+    img: "./image/nearBY-4.png",
     alt: "nearBy 4",
     title: "Qatar History vs Future",
     location: "Doha, Qatar",
