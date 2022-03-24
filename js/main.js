@@ -12,7 +12,7 @@ categories.forEach((cat) => {
     let category= document.getElementById("category");
 
     category.innerHTML += `
-    <div class="catergory-card rounded-lg text-white position-relative">
+    <div class="catergory-card card rounded-lg text-white position-relative">
     <div class="catergory-card-img position-absolute">
         <img src= ${cat.img} alt=${cat.alt}>
     </div>
@@ -41,7 +41,7 @@ popular.forEach((pop)=>{
     console.log(popularCon);
 
     popularCon.innerHTML +=`
-    <div class="event-card">
+    <div class="card event-card">
                     <div class="event-card-img-con">
                         <img src=${pop.img} alt=${pop.alt}>
                         <div class="event-card-img-con-heart-icon rounded-pill rounded-pill">
@@ -52,8 +52,8 @@ popular.forEach((pop)=>{
                         <p class="event-card-desc-time">${pop.eventTime}</p>
                         <div class="event-card-desc-info">
                             <div class="event-card-desc-info__left">
-                                <span class="event-card-desc-info__left-title">${pop.title}</span>
-                                <span class="event-card-desc-info__left-location">${pop.location}</span>
+                                <p class="event-card-desc-info__left-title">${pop.title}</p>
+                                <p class="event-card-desc-info__left-location">${pop.location}</p>
                             </div>
                             <div class="event-card-desc-info__right">
                                 <div class="event-card-desc-info__right-icon">
@@ -67,6 +67,7 @@ popular.forEach((pop)=>{
     `
 
 });
+
 featured.forEach((feature)=>{
     let featuredCon= document.getElementById("featured");
     console.log(featuredCon);

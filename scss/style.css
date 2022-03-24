@@ -330,7 +330,7 @@ section {
 }
 
 .slider {
-  margin: 36px 0 56px 0;
+  margin: 36px 0 28px 0;
 }
 
 .slider .carousel-item img {
@@ -353,15 +353,23 @@ section {
 }
 
 section.catergory .catergory-container {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 16px;
+  -webkit-column-count: auto;
+          column-count: auto;
+  -webkit-column-width: 232px;
+          column-width: 232px;
+  -webkit-column-gap: 14px;
+          column-gap: 14px;
+  padding: 3px;
 }
 
 section.catergory .catergory-container .catergory-card {
-  width: 232px;
-  height: 176px;
+  width: 100%;
+  display: inline-block;
+  border: none;
+  page-break-inside: avoid;
+  aspect-ratio: 29/22;
   background-color: #502274;
+  margin-bottom: 28px;
 }
 
 section.catergory .catergory-container .catergory-card-img {
@@ -379,6 +387,7 @@ section.catergory .catergory-container .catergory-card-info {
 section.catergory .catergory-container .catergory-card-info-title {
   font-size: 24px;
   line-height: 1.375;
+  max-width: 170px;
 }
 
 section.catergory .catergory-container .catergory-card-info-desc {
@@ -394,16 +403,23 @@ section.catergory .catergory-container .catergory-card-btn {
 }
 
 section.event .event-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 15px;
+  -webkit-column-count: auto;
+          column-count: auto;
+  -webkit-column-width: 292px;
+          column-width: 292px;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  padding: 3px;
+  -webkit-column-fill: balance;
+          column-fill: balance;
 }
 
 section.event .event-container .event-card {
-  width: 292px;
+  width: 100%;
+  display: inline-block;
+  border: none;
+  page-break-inside: avoid;
+  margin-bottom: 28px;
 }
 
 section.event .event-container .event-card-img-con {
@@ -414,7 +430,8 @@ section.event .event-container .event-card-img-con {
 section.event .event-container .event-card-img-con img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 184px;
+  aspect-ratio: 73/46;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -473,6 +490,7 @@ section.event .event-container .event-card-desc-info__left {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 300px;
 }
 
 section.event .event-container .event-card-desc-info__left-title {
