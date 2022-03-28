@@ -40,7 +40,9 @@ popular.forEach((pop)=>{
     let popularCon= document.getElementById("popular");
 
     popularCon.innerHTML +=`
-    <div class="card event-card">
+     <div class="event-card col-lg-3 col-sm-6 col-md-4" >
+    
+
                     <div class="event-card-img-con">
                         <img src=${pop.img} alt=${pop.alt}>
                         <div class="event-card-img-con-heart-icon rounded-pill rounded-pill">
@@ -72,8 +74,8 @@ featured.forEach((feature)=>{
 
 
     featuredCon.innerHTML +=`
-    <div class="event-card">
-                    <div class="event-card-img-con">
+    <div class="event-card col-lg-3 col-sm-6 col-md-4" >
+    <div class="event-card-img-con">
                         <img src=${feature.img} alt=${feature.alt}>
                         <div class="event-card-img-con-heart-icon rounded-pill rounded-pill">
                             <img src="./image/event-heart.svg" alt="like">
@@ -102,8 +104,8 @@ recomended.forEach((rec)=>{
     let recCon= document.getElementById("recomended");
 
     recCon.innerHTML +=`
-    <div class="event-card">
-                    <div class="event-card-img-con">
+    <div class="event-card col-lg-3 col-sm-6 col-md-4" >
+    <div class="event-card-img-con">
                         <img src=${rec.img} alt=${rec.alt}>
                         <div class="event-card-img-con-heart-icon rounded-pill rounded-pill">
                             <img src="./image/event-heart.svg" alt="like">
@@ -132,8 +134,8 @@ nearBy.forEach((nearBy)=>{
     let nearByCon= document.getElementById("nearBy");
 
     nearByCon.innerHTML +=`
-    <div class="event-card">
-                    <div class="event-card-img-con">
+    <div class="event-card col-lg-3 col-sm-6 col-md-4" >
+    <div class="event-card-img-con">
                         <img src=${nearBy.img} alt=${nearBy.alt}>
                         <div class="event-card-img-con-heart-icon rounded-pill rounded-pill">
                             <img src="./image/event-heart.svg" alt="like">

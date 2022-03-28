@@ -76,15 +76,15 @@ padding: 3px;
 section.event {
   .event-container {
     
-    column-count:auto;
-    column-width: 292px;
-    column-gap: 15px;
-    padding: 3px;
-   column-fill:balance;
+  //   column-count:auto;
+  //   column-width: 292px;
+  //   column-gap: 15px;
+  //   padding: 3px;
+  //  column-fill:balance;
    
     .event-card {
-      width: 100%;
-      display: inline-block;
+      // width: 100%;
+      // display: inline-block;
       border: none;
       page-break-inside: avoid;
       margin-bottom: 28px;
