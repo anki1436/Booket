@@ -38,7 +38,6 @@ categories.forEach((cat) => {
 })
 popular.forEach((pop)=>{
     let popularCon= document.getElementById("popular");
-    console.log(popularCon);
 
     popularCon.innerHTML +=`
     <div class="card event-card">
@@ -70,7 +69,6 @@ popular.forEach((pop)=>{
 
 featured.forEach((feature)=>{
     let featuredCon= document.getElementById("featured");
-    console.log(featuredCon);
 
 
     featuredCon.innerHTML +=`
@@ -102,7 +100,6 @@ featured.forEach((feature)=>{
 });
 recomended.forEach((rec)=>{
     let recCon= document.getElementById("recomended");
-    console.log(recCon);
 
     recCon.innerHTML +=`
     <div class="event-card">
