@@ -125,6 +125,8 @@ header .container .nav .search-container {
 @media (max-width: 767px) {
   header .container .nav .search-container {
     margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
@@ -189,7 +191,7 @@ header .container .nav .search-container .search-icon {
 
 @media (max-width: 767px) {
   header .container .nav .search-container .search-icon {
-    margin-left: 18px;
+    margin-left: auto;
   }
 }
 
