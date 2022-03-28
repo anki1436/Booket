@@ -12,15 +12,18 @@
 
 </head>
 <body id="body">
-    <!-- <header class="sticky-top">
-        <div class="container w-100 mx-auto d-flex align-items-center">
+    <header class="sticky-top">
+        <div class="container w-100 mx-auto d-flex align-items-center justify-content-between">
             <a href="#" class="logo d-flex align-items-center">
                 <img src="./image/logo.svg" class="logo-img" alt="logo">
             </a>
-            <nav class="nav w-100 d-flex justify-content-between align-items-center">
+            <a class="hamburger" href="javascript:void(0);" onclick="menuToggle()">
+                <div class="hamburger__line" id="line"></div>
+              </a>
+            <nav class="nav w-100 d-flex justify-content-between align-items-center"  id="menu">
                 <div class="search-container d-flex align-items-center rounded-pill bg-white">
                     <div class="search-info d-flex flex-column ">
-                        <span class="search-info-heading">
+                        <span clxass="search-info-heading">
                             Date
                         </span>
                         <span class="search-info-desc">
@@ -50,24 +53,24 @@
                 </div>
 
                 <div class="setting-container d-flex align-items-end">
-                    <div class="setting">
+                    <a class="setting" title="Host catergory">
                         <div class="setting-icon  d-flex justify-content-center">
                             <img src="./image/host.svg" alt="host">
                         </div>
                         <span class="setting-title text-white">Host catergory</span>
-                    </div>
-                    <div class="setting">
+                    </a>
+                    <a class="setting" title="wishlist">
                         <div class="setting-icon d-flex justify-content-center">
                             <img src="./image/wish-list.svg" alt="wishlist">
                         </div>
                         <span class="setting-title text-white">Wishlist</span>
-                    </div>
-                    <div class="setting">
+                    </a>
+                    <a class="setting" title="Notification">
                         <div class="setting-icon d-flex justify-content-center">
                             <img src="./image/notification.svg" alt="notification">
                         </div>
                         <span class="setting-title text-white">Notification</span>
-                    </div>
+                    </a>
                     <div class="profile d-flex justify-content-center flex-column align-items-center">
                         <img src="./image/profile.jpg" class="profile-img rounded-pill" alt="profile-img">
 
@@ -80,7 +83,7 @@
         </div>
         </nav>
         </div>
-    </header>  -->
+    </header> 
     <main>
         <section class="slider">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -151,7 +154,7 @@
             </div>
         </section>
     </main>
-    <footer>
+<footer>
         <div class="container d-flex">
 
             <div class="footer-join d-flex flex-column align-items-start">
@@ -159,8 +162,6 @@
                 <span class="footer__heading text-white">Are you an event company?</span>
                 <button class="btn btn-warning footer-join-btn">Join us</button>
             </div>
-
-            
                 <div class="footer-aboutUs-link-con">
                     <p class="footer__heading text-white">Quick Link</p>
                     <ul class="footer-aboutUs-link-con__link-wrapper">
@@ -214,7 +215,8 @@
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>  
+    <script src="./js/toggle.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.usebootstrap.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>

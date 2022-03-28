@@ -38,7 +38,7 @@ padding: 3px;
       border: none;
       page-break-inside: avoid;
 
-      aspect-ratio: 29/22;
+      min-height: 182px;
       background-color: $primary-clr;
       margin-bottom: 28px;
       
@@ -80,9 +80,7 @@ section.event {
     column-width: 292px;
     column-gap: 15px;
     padding: 3px;
-  
-    column-fill: balance;
-
+   column-fill:balance;
    
     .event-card {
       width: 100%;
@@ -90,7 +88,8 @@ section.event {
       border: none;
       page-break-inside: avoid;
       margin-bottom: 28px;
-    
+      break-inside: avoid;
+
 
       &-img-con {
         position: relative;
@@ -170,19 +169,22 @@ section.event {
 
 .organizer{
   &-container{
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 15px;
+    column-count:auto;
+    column-width: 220px;
+  
+  
+    
 
     .organizer-card{
       position: relative;
-      width: 232px; 
       height: 344px;
-      padding: 10px 20px;
-      display: flex;
       flex-direction: column;
       align-items: center;
+      width: 100%;
+      min-width: 233px;
+      display: inline-flex;
+      border: none;
+      page-break-inside: avoid;
       
       border-radius: 10px;
       border: 1px solid rgb(234, 234, 234);
@@ -209,6 +211,7 @@ section.event {
         color: rgb(35, 16, 0);
         margin-bottom: 6px;
         text-align: center;
+        max-width: 175px;
 
       }
       &-follower{

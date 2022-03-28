@@ -165,7 +165,7 @@ organizer.forEach((organizer)=>{
     let organizerCon= document.getElementById("organizer");
 
     organizerCon.innerHTML +=`
-    <div class="organizer-card">
+    <div class="organizer-card card">
     <div class="organizer-card-close">
         <img src="./image/organizer-close.svg" alt="close">
     </div>
@@ -178,6 +178,7 @@ organizer.forEach((organizer)=>{
 
 
 });
+
 
 
 

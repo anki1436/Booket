@@ -5,20 +5,56 @@ header {
   .container {
     max-width: 1240px;
     padding: 24px 15px;
+    @include breakpoint("mobile-max") {
+      position: relative;
+      padding: 12px 10px;
+    }
 
     .logo {
       margin: 0 40px 0 6px;
+      @include breakpoint("desktop-max") {
+        margin: 0 20px 0 6px;
+      }
     }
 
     .nav {
+      background-color: $primary-clr;
+
+      @include breakpoint("mobile-max") {
+        // transform: translateX(-250%);
+        position: absolute;
+        height: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end !important;
+     
+        // top: -100vh;
+        top: -100vh;
+        right: 0;
+        left: 0;
+        height: calc(100vh - 74px);
+        padding: 30px 10px;
+      }
       .search-container {
-        
         padding: 4px 8px 4px 0;
+        @include breakpoint("mobile-max") {
+          margin-top: 20px;
+        }
 
         .search-info {
           margin-left: 33px;
           cursor: pointer;
           font-size: 14px;
+
+          @include breakpoint("desktop-max") {
+            margin-left: 15px;
+            font-size: 11px;
+          }
+          @include breakpoint("ipad-max") {
+            margin-left: 11px;
+            font-size: 10px;
+          }
+       
 
           &-heading {
             font-weight: 600;
@@ -27,6 +63,9 @@ header {
           &-desc {
             font-weight: 400;
             color: #96969b;
+            @include breakpoint("mobile-max") {
+              display: none;
+            }
           }
         }
         .search-icon {
@@ -35,15 +74,47 @@ header {
           height: 56px;
           cursor: pointer;
           background-color: $secondary-clr;
+          @include breakpoint("desktop-max") {
+            margin-left: 15px;
+            width: 36px;
+            height: 36px;
+          }
+          @include breakpoint("mobile-max") {
+            margin-left: 18px;
+          }
         }
       }
       .setting-container {
         gap: 24px;
 
+        @include breakpoint("desktop-max") {
+          gap: 10px;
+        }
+        @include breakpoint("ipad-max") {
+          align-items: flex-start !important;
+        }
+        @include breakpoint("mobile-max") {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center !important;
+        }
+
         .setting {
-      
+          pointer-events: none;
+
+          @include breakpoint("ipad-max") {
+            margin-left: 8px;
+            pointer-events: all;
+          }
+          @include breakpoint("mobile-max") {
+            margin: 0;
+          }
+
           &-icon {
             margin-bottom: 4px;
+            @include breakpoint("ipad-max") {
+              display: none;
+            }
 
             img {
               width: 32px;
@@ -54,6 +125,12 @@ header {
           &-title {
             font-size: 14px;
             font-weight: 400;
+            @include breakpoint("ipad-max") {
+             display: none;
+            }
+            @include breakpoint("mobile-max") {
+              display: block;
+             }
           }
         }
       }
@@ -71,5 +148,68 @@ header {
     background-color: $primary-clr;
     font-size: 14px;
     font-weight: 400;
+  }
+}
+
+.hamburger {
+  display: none !important;
+  height: 25px;
+  width: 25px;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 15px;
+  position: relative;
+  margin-left: 13px;
+  @include breakpoint("mobile-max") {
+    display: block !important;
+  }
+
+
+  &__line {
+    width: 16px;
+    height: 2px;
+    background: white;
+    position: relative;
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &::before {
+      position: absolute;
+      top: 5px;
+      width: 16px;
+      height: 2px;
+      background: white;
+      content: "";
+    }
+    &::after {
+      position: absolute;
+      bottom: 5px;
+      width: 16px;
+      height: 2px;
+      background:white;
+      content: "";
+    }
+  }
+  &__line.close {
+    position: absolute;
+    background: transparent;
+    top: 6px;
+    &:hover {
+      transform: scale(1.3);
+    }
+    &::before {
+      background: white;
+      position: absolute;
+      transform: rotate(45deg);
+      bottom: 0;
+    }
+    &::after {
+      background: white;
+      position: absolute;
+      transform: rotate(-45deg);
+      top: 5px;
+    }
   }
 }
